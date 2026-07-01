@@ -1,5 +1,5 @@
 import React from 'react';
-import EmployeePage from './pages/EmployeePage';
+import EmployeesPage from './pages/EmployeesPage';
 
 /* 
   Por ahora renderizamos directamente la página de empleados aquí.
@@ -9,7 +9,7 @@ import EmployeePage from './pages/EmployeePage';
 function App() {
   return (
     <>
-      <EmployeePage />
+      <EmployeesPage />
     </>
   );
 }
