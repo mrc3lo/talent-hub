@@ -8,5 +8,12 @@ contextBridge.exposeInMainWorld('api', {
     getById: (id) => ipcRenderer.invoke('employee:getById', id),
     search: (criteria) => ipcRenderer.invoke('employee:search', criteria)
   },
-  // Tus compañeros agregarán aquí sus respectivos canales (auth, candidate, payroll)
+  
+  // DOMINIO 2 (Integrante B - Selección):
+  candidate: {
+    getAll: () => ipcRenderer.invoke('candidate:getAll'),
+    updateStatus: (data) => ipcRenderer.invoke('candidate:updateStatus', data)
+  }
+  
+  // Tu otro compañero agregará aquí sus canales (auth, payroll)
 });
