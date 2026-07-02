@@ -9,7 +9,7 @@ import EmployeesPage from './pages/EmployeesPage';
 function App() {
   return (
     <>
-      <EmployeePage />
+      <EmployeesPage />
     </>
   );
 }
